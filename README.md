@@ -12,7 +12,7 @@ Please run
 + `demo_joint_decomposition.m`: To see the performance of the proposed joint INDSCAL decomposition of two tensors
 + `demo_type2_BTD.m`: To see the performance of the proposed type2-BTD decomposition
 + `demo_source_separation.m`: To illustrate the performance of tensor-based source seperation algorithms
-+ `demo_EMG.m`: To see the performance of our algorithm for EMG source separation
++ `demo_EMG.m`: To see the performance of our algorithm for EMG source separation, download file "SynthMUAP.mat" from the Release
 ## Reference
 
 This code is free and open source for research purposes. If you use this code, please acknowledge the following paper.
