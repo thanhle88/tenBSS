@@ -20,3 +20,5 @@ This code is free and open source for research purposes. If you use this code, p
 [1] L.T. Thanh, K. Abed-Meraim, P. Ravier, O. Buttelli, A. Holobar. "[*Tensorial Convolutive Blind Source Separation*](https://ieeexplore.ieee.org/document/10447269)". **Proc. 49th IEEE ICASSP**, 2024. 
 
 [2] L.T. Thanh, K. Abed-Meraim, P. Ravier, O. Buttelli, A. Holobar. "[*Joint INDSCAL Decomposition Meets Blind Source Separation*](https://ieeexplore.ieee.org/document/10447387)". **Proc. 49th IEEE ICASSP**, 2024. 
+
+[3] L.T. Thanh, K. Abed-Meraim, P. Ravier, O. Buttelli, A. Holobar. "[*Tensor decomposition meets blind source separation*](https://www.sciencedirect.com/science/article/abs/pii/S0165168424001026)". **Signal Process.**, 2024. 
