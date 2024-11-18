@@ -1,8 +1,7 @@
 function [X_sel,H_sel,S,fsamp,L] = data_generator(k)
-% EMG data generation
 % k = number of sources
 % load data
-load('SynthMUAP.mat')
+load('SynthMUAP_SOL_ORLEANS_lib1_F0-5-0_run1_Len50_ramp1_stdStim0.013_SNRInf_16-Jan-2023_15_49.mat')
 
 %% MUAPs
 H = [];
