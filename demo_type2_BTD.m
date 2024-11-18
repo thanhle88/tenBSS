@@ -56,8 +56,7 @@ fprintf('       error = %f \n',err_ALS_ELSC)
 
 
 disp('+ Proposed type2-BTD')
-OPTS.data_type = 'complex';
-[A_es,er_A,er_X] = type2_BTD(X,L_vec,OPTS);
+[A_es,er_A,er_X] = BTD2_IALM(X,L_vec,OPTS);
 err_our = er_A(end);
 fprintf('       error = %f \n',err_our)
 
