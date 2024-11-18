@@ -1,4 +1,7 @@
 function [H_es,S_es] = TCBSS(Data,R,OPTS)
+% Author: Thanh Trung Le,
+% Vietnam National University, Hanoi
+% Email: thanhletrung@vnu.edu.vn
 
 if isfield(OPTS,'tau'), % number of time lags
     tau = OPTS.tau;
