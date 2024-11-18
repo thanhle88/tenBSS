@@ -1,4 +1,8 @@
 function [A_es,er_A,er_X] = BTD2_IALM(X,L_vec,OPTS)
+% Author: Thanh Trung Le,
+% Vietnam National University, Hanoi
+% Email: thanhletrung@vnu.edu.vn
+
 
 if nargin <= 2
     flag = 0;             % without performance estimation part
