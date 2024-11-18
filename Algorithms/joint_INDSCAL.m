@@ -1,5 +1,8 @@
 function [Fac_X,Fac_Y] = joint_INDSCAL(X,Y,R,OPTS)
 % Joint INDSCAL decomposition of X (M x M x L) and Y (M2 x M2 x L)
+% Author: Thanh Trung Le,
+% Vietnam National University, Hanoi
+% Email: thanhletrung@vnu.edu.vn
 
 %%
 if isfield(OPTS,'rho'),
