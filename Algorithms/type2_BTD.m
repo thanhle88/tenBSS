@@ -11,7 +11,6 @@ else
     flag = 1;             % with performance estimation part
     X_true = OPTS.X_true;
     A_true = OPTS.A_true;
-    D_true = OPTS.D_true;
 end
 
 if isfield(OPTS,'data_type')
