@@ -15,12 +15,12 @@ Nc  = cumsum([0,L_vec]);
 %*********************************
 %% Generate Data
 D = zeros(N,N,K);
-A = randn(I,N) + i*randn(I,N);
+A = randn(I,N);
 for r=1:R
     D(Nc(r)+1:Nc(r+1),Nc(r)+1:Nc(r+1),:)=randn(L_vec(r),L_vec(r),K);
 end
 X_true = tmprods(tmprod(D,A,1),A,2);
-Noise_tens = randn(I,I,K) + i*randn(I,I,K);
+Noise_tens = randn(I,I,K);
 X = X_true + sigma*Noise_tens;
 
 OPTS.X_true = X_true;
