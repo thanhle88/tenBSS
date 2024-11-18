@@ -15,12 +15,12 @@ Nc  = cumsum([0,L_vec]);
 %*********************************
 %% Generate Data
 D = zeros(N,N,K);
-A = randn(I,N);
+A = randn(I,N) + i*randn(I,N);
 for r=1:R
     D(Nc(r)+1:Nc(r+1),Nc(r)+1:Nc(r+1),:)=randn(L_vec(r),L_vec(r),K);
 end
-X_true =tmprod(tmprod(D,A,1),A,2);
-Noise_tens=randn(I,I,K);
+X_true = tmprods(tmprod(D,A,1),A,2);
+Noise_tens = randn(I,I,K) + i*randn(I,I,K);
 X = X_true + sigma*Noise_tens;
 
 OPTS.X_true = X_true;
@@ -56,7 +56,8 @@ fprintf('       error = %f \n',err_ALS_ELSC)
 
 
 disp('+ Proposed type2-BTD')
-[A_es,er_A,er_X] = BTD2_IALM(X,L_vec,OPTS);
+OPTS.data_type = 'complex';
+[A_es,er_A,er_X] = type2_BTD(X,L_vec,OPTS);
 err_our = er_A(end);
 fprintf('       error = %f \n',err_our)
 
